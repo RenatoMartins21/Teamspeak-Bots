@@ -1,0 +1,7 @@
+## Install php
+## Install screen
+## Give all files CHMOD 777 
+## Set Config 
+## Bot Start => ./bot start
+## Bot Stop => ./bot stop
+## On Ban Rank muste be off perm "b_group_is_permanent"
