@@ -1,0 +1,16 @@
+## Install php5
+## Install php-gd
+## Directory "banner" put on "/var/www/"
+## Give all files CHMOD 777 
+## Set Config on "run_as_cron.php.php"
+## Add it to crontab -> "* * * * * cd /var/www/banner/ && php run_as_cron.php > /dev/null 2>&1"
+## Check http://www."yourdomain".com/banner/banner.php
+## On line 36 set "channel id" Default is "1"
+
+{ 
+$news = $tsAdmin->getElement('data', $tsAdmin->channelInfo(1));
+}
+
+## Past "http://www."yourdomain".com/banner/banner.php" to "Banner Gfx URL:"
+## Set "Gfx Interval:" to 60
+
