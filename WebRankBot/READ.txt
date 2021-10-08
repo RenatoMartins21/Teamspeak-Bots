@@ -1,0 +1,23 @@
+## Install php5
+## Install screen
+## Intall apache2
+## Give all files CHMOD 777 
+## Put folder to /var/www/
+
+Past your img icons to dir icons!!
+
+#Edit index.html
+ line 10 --> ranklimit = 5; (change your limit rank)
+ line 54 --> <p><i class="fa fa-asterisk fa-spin"></i> Max x ranks.</p> (write you limitrank example: Max 5 ranks)
+ line 64 --> (here you add your ranks you must change only 2 things;  value="here id rank"  and url('here img icoon'))
+ 
+ example:
+ <label class="icon"><li><input class="rank" type="checkbox" onClick="if (this.checked) return check(this); else del()" name="ranks_list[]" value="1"/><span style="background: url('icons/1.png');"></span></li></label>
+ <label class="icon"><li><input class="rank" type="checkbox" onClick="if (this.checked) return check(this); else del()" name="ranks_list[]" value="2"/><span style="background: url('icons/2.png');"></span></li></label>
+
+ 
+ We add 2 ranks. Remeber you must copy all line and change VALUE and FILE IMG.
+ 
+ #Edit script/config.php
+ line 10 --> /*	Max rank 					*/ $rank_limit = 5;	(set this same limit as index.html line 9)
+ line 11 --> /*	Flood (sec)					*/ $flood = 60; (here you set antyflood 'sec')

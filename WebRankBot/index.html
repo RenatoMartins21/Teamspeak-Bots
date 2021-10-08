@@ -1,0 +1,78 @@
+﻿<html lang="en">
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300" rel="stylesheet" type="text/css">		
+		<title>WebRankBot</title>		
+	
+		<script type="text/javascript">
+		ranklimit = 5;
+		boxs = 0;
+		function check(theBox) {
+		if (boxs+1 > ranklimit) {
+          alert('Too much selected ranks');
+          return false;
+		}
+		boxs++
+		return true;
+		}
+		function del() {
+		boxs--
+		}
+		function max(){
+		if (this.checked) return check(this); else del()
+		}		
+		$(document).ready(  
+		function()  
+		{  
+        $("form#ranks").submit (  
+            function()  
+            {  
+                    if($('.rank').is(":checked") == false)  
+                    {  
+                            alert("You forgot to choose rank");  
+                    return false;  
+                    }  
+                return true;  
+                }  
+            );      
+		}  
+		);	
+				  		
+		</script>
+
+		<body>
+			<div id="main">
+				<h1>WebRank</h1>
+				<br/>
+			</div>
+
+			<div id="info">
+				<p><i class="fa fa-asterisk fa-spin"></i> If you want add rank you must be online on server.</p>
+				<p><i class="fa fa-asterisk fa-spin"></i> Max x ranks.</p>
+				<p><i class="fa fa-asterisk fa-spin"></i> [ctrl + i] on teamspeak if you dont know UniqueID</p>
+			</div>
+
+				
+			<form action="script/script.php" id="ranks" method="post">	
+
+					<input type="text" name="uid" maxlength="28" placeholder="UniqueID here" required="required"></input>	
+						<ul>	
+													
+							<label class="icon"><li><input class="rank" type="checkbox" onClick="if (this.checked) return check(this); else del()" name="ranks_list[]" value="52"/><span style="background: url('icons/1.png');"></span></li></label>
+							<label class="icon"><li><input class="rank" type="checkbox" onClick="if (this.checked) return check(this); else del()" name="ranks_list[]" value="53"/><span style="background: url('icons/2.png');"></span></li></label>
+							<label class="icon"><li><input class="rank" type="checkbox" onClick="if (this.checked) return check(this); else del()" name="ranks_list[]" value="54"/><span style="background: url('icons/3.png');"></span></li></label>							
+							<label class="icon"><li><input class="rank" type="checkbox" onClick="if (this.checked) return check(this); else del()" name="ranks_list[]" value="55"/><span style="background: url('icons/4.png');"></span></li></label>							
+							<label class="icon"><li><input class="rank" type="checkbox" onClick="if (this.checked) return check(this); else del()" name="ranks_list[]" value="56"/><span style="background: url('icons/5.png');"></span></li></label>							
+							<label class="icon"><li><input class="rank" type="checkbox" onClick="if (this.checked) return check(this); else del()" name="ranks_list[]" value="57"/><span style="background: url('icons/6.png');"></span></li></label>							
+							<label class="icon"><li><input class="rank" type="checkbox" onClick="if (this.checked) return check(this); else del()" name="ranks_list[]" value="58"/><span style="background: url('icons/7.png');"></span></li></label>							
+							<label class="icon"><li><input class="rank" type="checkbox" onClick="if (this.checked) return check(this); else del()" name="ranks_list[]" value="59"/><span style="background: url('icons/8.png');"></span></li></label>							
+							<label class="icon"><li><input class="rank" type="checkbox" onClick="if (this.checked) return check(this); else del()" name="ranks_list[]" value="60"/><span style="background: url('icons/9.png');"></span></li></label>																
+							
+						</ul>
+					<input class="btn" value="Add Rank" type="submit"/>
+
+			</form>
+		</body>
+		
+</html>

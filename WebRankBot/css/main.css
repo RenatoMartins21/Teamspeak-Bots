@@ -1,0 +1,162 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+	transition: background .5s ease;
+}
+ol, ul {
+	list-style: none;
+}
+ 
+body {
+	line-height: 1;
+	transition: background .5s ease;
+}
+ol, ul {
+	list-style: none;
+}
+
+body{
+	background-color: #151515;;
+	font-family: "Open Sans", serif;
+	margin:0px;
+	padding:0px;
+	
+}
+
+b{
+	font-weight: bold;
+}
+
+a{
+	text-decoration: none;
+}
+#main h1 {
+	color: #ffffff;
+	font-size: 21pt;
+	font-weight: 600;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#main p {
+	color: #ffffff;
+	font-size: 11pt;
+	font-weight: 400;
+	line-height: 1.4;
+	text-align: center;
+}
+
+#main {
+	background-color: #128abe;
+	height: auto;
+	padding: 20px 0;
+	width: 100%;
+}
+
+
+#info {
+    line-height: 1.7;
+    margin: 19px auto;
+    width: 890px;
+}
+
+#info p{
+	color:#fff;
+	text-align:center;
+}
+
+#info i {
+    color: #ffb900;
+}
+
+
+#footer{
+	display: none;
+}
+
+
+ul {
+	height: auto;
+	margin: 0 auto;
+	width: 51%;
+}
+
+li{
+	display: inline-block;
+}
+
+input {
+	border: 0 none;
+	border-radius: 5px;
+	color: #1aa6b7;
+	display: block;
+	font-family: Open Sans;
+	font-size: 23pt;
+	font-weight: 400;
+	height: 53px;
+	margin: 12px auto;
+	padding-left: 22px;
+	width: 500px;
+}
+
+.btn {
+	background-color: #128abe;
+	border-radius: 5px;
+	color: #ffffff;
+	font-size: 22pt;
+	font-weight: 800;
+	height: 60px;
+	line-height: 60px;
+	margin: 16px auto;
+	text-align: center;
+	transition: all 0.1s ease-in-out 0s;
+	width: 500px;
+}
+
+.btn:hover{
+	cursor:pointer;
+	background-color: #33adff;
+}
+
+.icon input {
+		display: none;
+}
+
+.icon input:checked + span {
+	opacity: 1;
+	-webkit-transition: 1.5s;
+	border: 1px solid rgba(255, 51, 0,1);
+	border-radius: 1px;
+}
+.icon span {
+	margin:4px;
+    width: 16px;
+    height: 16px;
+    display: block;
+	opacity: 0.6;
+	-webkit-transition: 1.5s;
+	border: 1px solid rgba(0,0,0,0.01);
+}
+.icon span:hover  {
+		cursor:pointer;
+}
